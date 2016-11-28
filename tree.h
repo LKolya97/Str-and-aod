@@ -4,6 +4,8 @@
 template <class Player> class Tree;
 #include "node.h"
 #include "player.h"
+#include<iostream>
+using namespace std;
 template <class Player>
 class Tree
 {
