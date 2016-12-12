@@ -4,6 +4,7 @@
 class Player {
 private:
 		int luck;
+		int number;
 public:
 
 	int getLuck() {
@@ -12,8 +13,15 @@ public:
 	void setLuck(int x) {
 		luck = x;
 	}
+		int getNumber() {
+		return number;
+	}
+	void setNumber(int x) {
+		number = x;
+	}
 	Player() {
-		luck = 0;
+		luck = NULL;
+		number=NULL;
 	}
 	~Player() {
 	}
