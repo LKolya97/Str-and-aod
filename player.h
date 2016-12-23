@@ -1,10 +1,12 @@
 #ifndef PLAYER_H
 #define PLAYER_H
-
+#include <string.h>
+#include <iostream>
+using namespace std;
 class Player {
 private:
 		int luck;
-		int number;
+		string name;
 public:
 
 	int getLuck() {
@@ -13,15 +15,15 @@ public:
 	void setLuck(int x) {
 		luck = x;
 	}
-		int getNumber() {
-		return number;
+	int getName() {
+		return name;
 	}
-	void setNumber(int x) {
-		number = x;
+	void setName(string x) {
+		name = x;
 	}
 	Player() {
-		luck = NULL;
-		number=NULL;
+		luck = 0;
+		name = NULL;
 	}
 	~Player() {
 	}
